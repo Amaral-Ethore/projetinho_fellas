@@ -1,0 +1,55 @@
+*{
+    font-family: fantasy;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    display: grid;
+    justify-content: center;
+    margin: 0;
+}
+.container{
+    display: grid;
+    grid-template-areas: 'header' 'content' 'footer';
+    grid-template-rows: 150px auto 200px;
+    height: 100vh;
+    width: 100vw;
+}
+.container div{
+    border: 1px solid blue;    
+}
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.social{
+    display: grid;
+    font-size: 35px;
+    justify-content: end;
+    align-content: center;
+}
+.icons{
+    width: 103px;
+    height: 45px;
+    margin-inline: 20px;
+}
+.logo-div{
+    display: grid;
+    align-content: center; 
+}
+.logo{
+    width: 200px;
+}
+.logo img{
+    max-width: 100%;
+}
+.mid-layer{
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+}
+.menu-bar{
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+}
